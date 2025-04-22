@@ -1,0 +1,388 @@
+1. Arithmetic Operators
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int a = 10, b = 5;
+    printf("Addition: %d\n", a + b);
+    printf("Subtraction: %d\n", a - b);
+    printf("Multiplication: %d\n", a * b);
+    printf("Division: %d\n", a / b);
+    printf("Modulus: %d\n", a % b);
+    return 0;
+}
+2. Area of Rectangle
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int length = 5, breadth = 10;
+    int area = length * breadth;
+    printf("Area of Rectangle: %d\n", area);
+    return 0;
+}
+3. Relational and Conditional Operators
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int a = 10, b = 20;
+    if (a > b)
+        printf("a is greater\n");
+    else
+        printf("b is greater\n");
+
+    (a == b) ? printf("Equal\n") : printf("Not Equal\n");
+    return 0;
+}
+4. Even or Odd
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter number: ");
+    scanf("%d", &num);
+    if (num % 2 == 0)
+        printf("Even\n");
+    else
+        printf("Odd\n");
+    return 0;
+}
+
+5. Largest Among Three Numbers
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int a = 10, b = 20, c = 15;
+    if (a > b && a > c)
+        printf("a is largest\n");
+    else if (b > c)
+        printf("b is largest\n");
+    else
+        printf("c is largest\n");
+    return 0;
+}
+6. Leap Year Check
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int year = 2024;
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+        printf("Leap Year\n");
+    else
+        printf("Not a Leap Year\n");
+    return 0;
+}
+7. Day of Week (1–7) using Switch
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int day;
+    printf("Enter day (1-7): ");
+    scanf("%d", &day);
+    switch (day) {
+        case 1: printf("Monday\n"); break;
+        case 2: printf("Tuesday\n"); break;
+        case 3: printf("Wednesday\n"); break;
+        case 4: printf("Thursday\n"); break;
+        case 5: printf("Friday\n"); break;
+        case 6: printf("Saturday\n"); break;
+        case 7: printf("Sunday\n"); break;
+        default: printf("Invalid day\n");
+    }
+    return 0;
+}
+8. Calendar Month using Switch
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int month;
+    printf("Enter month number (1-12): ");
+    scanf("%d", &month);
+    switch (month) {
+        case 1: printf("January\n"); break;
+        case 2: printf("February\n"); break;
+        case 3: printf("March\n"); break;
+        case 4: printf("April\n"); break;
+        case 5: printf("May\n"); break;
+        case 6: printf("June\n"); break;
+        case 7: printf("July\n"); break;
+        case 8: printf("August\n"); break;
+        case 9: printf("September\n"); break;
+        case 10: printf("October\n"); break;
+        case 11: printf("November\n"); break;
+        case 12: printf("December\n"); break;
+        default: printf("Invalid month\n");
+    }
+    return 0;
+}
+
+
+Great! Here's the continuation from Program 9 to 25:
+
+9. Print Numbers from 1 to 10 using Loop
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    for (int i = 1; i <= 10; i++) {
+        printf("%d\n", i);
+    }
+    return 0;
+}
+10. Print Odd Numbers from 1 to 20
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    for (int i = 1; i <= 20; i += 2) {
+        printf("%d\n", i);
+    }
+    return 0;
+}
+11. Sum of First N Natural Numbers
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int n, sum = 0;
+    printf("Enter n: ");
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++) {
+        sum += i;
+    }
+    printf("Sum = %d\n", sum);
+    return 0;
+}
+12. Factorial of a Number
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int n, fact = 1;
+    printf("Enter number: ");
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    printf("Factorial = %d\n", fact);
+    return 0;
+}
+13. Multiplication Table
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Enter number: ");
+    scanf("%d", &n);
+    for (int i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", n, i, n * i);
+    }
+    return 0;
+}
+14. Array Input and Output
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int arr[5];
+    printf("Enter 5 elements:\n");
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", &arr[i]);
+    }
+    printf("You entered:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", arr[i]);
+    }
+    return 0;
+}
+15. Find Maximum in Array
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int arr[5], max;
+    printf("Enter 5 numbers:\n");
+    for (int i = 0; i < 5; i++)
+        scanf("%d", &arr[i]);
+    max = arr[0];
+    for (int i = 1; i < 5; i++)
+        if (arr[i] > max)
+            max = arr[i];
+    printf("Maximum = %d\n", max);
+    return 0;
+}
+16. Structure Example
+c
+Copy
+Edit
+#include <stdio.h>
+struct Student {
+    int roll;
+    char name[20];
+    float marks;
+};
+int main() {
+    struct Student s = {1, "Amit", 89.5};
+    printf("Roll: %d\nName: %s\nMarks: %.2f\n", s.roll, s.name, s.marks);
+    return 0;
+}
+17. Pointer Basics
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int a = 10;
+    int *p = &a;
+    printf("Value of a = %d\n", *p);
+    return 0;
+}
+18. String Length without strlen()
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    char str[100];
+    int i = 0;
+    printf("Enter string: ");
+    gets(str);
+    while (str[i] != '\0') {
+        i++;
+    }
+    printf("Length = %d\n", i);
+    return 0;
+}
+19. Use of Math Functions (sqrt, pow)
+c
+Copy
+Edit
+#include <stdio.h>
+#include <math.h>
+int main() {
+    double a = 16, b = 2;
+    printf("sqrt(16) = %.2f\n", sqrt(a));
+    printf("pow(2, 3) = %.2f\n", pow(b, 3));
+    return 0;
+}
+20. Swapping using Call by Value
+c
+Copy
+Edit
+#include <stdio.h>
+void swap(int a, int b) {
+    int temp = a;
+    a = b;
+    b = temp;
+    printf("Inside swap: a = %d, b = %d\n", a, b);
+}
+int main() {
+    int x = 5, y = 10;
+    swap(x, y);
+    printf("After swap: x = %d, y = %d\n", x, y);
+    return 0;
+}
+21. Recursive Factorial
+c
+Copy
+Edit
+#include <stdio.h>
+int factorial(int n) {
+    if (n == 0)
+        return 1;
+    return n * factorial(n - 1);
+}
+int main() {
+    int n;
+    printf("Enter number: ");
+    scanf("%d", &n);
+    printf("Factorial = %d\n", factorial(n));
+    return 0;
+}
+22. Print Pattern (Triangle)
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+23. Sum of Digits
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int n, sum = 0, rem;
+    printf("Enter number: ");
+    scanf("%d", &n);
+    while (n > 0) {
+        rem = n % 10;
+        sum += rem;
+        n /= 10;
+    }
+    printf("Sum of digits = %d\n", sum);
+    return 0;
+}
+24. Reverse a Number
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int n, rev = 0;
+    printf("Enter number: ");
+    scanf("%d", &n);
+    while (n > 0) {
+        rev = rev * 10 + n % 10;
+        n /= 10;
+    }
+    printf("Reversed Number = %d\n", rev);
+    return 0;
+}
+25. Fibonacci Series
+c
+Copy
+Edit
+#include <stdio.h>
+int main() {
+    int n, a = 0, b = 1, next;
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+    printf("Fibonacci Series: ");
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", a);
+        next = a + b;
+        a = b;
+        b = next;
+    }
+    return 0;
+}
